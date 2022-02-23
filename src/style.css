@@ -1,0 +1,233 @@
+
+:root {
+    --color0: white;
+    --color1: #131313;
+    --color2: #E6017E;
+    --color3: #d60076; 
+    --color4: #b30263;
+
+}
+
+/* Nav bar */
+
+nav {
+    background-color: var(--color1);
+}
+
+.nav-link {
+    color: var(--color0);
+}
+
+.nav-link:hover {
+    color: var(--color2);
+    font-weight: 500;
+}
+
+.nav-link:active {
+    color: var(--color4);
+}
+
+    .navbar-toggler {
+        border-color: var(--color0);
+    }
+
+    .navbar-icon {
+        color: var(--color0);
+    }
+
+
+
+/* Nav bar */
+
+
+.hero {
+    animation: from-top 2s ease;
+}
+
+/* --- Main --- */
+
+/* portfolio index */
+
+.container__image {
+    max-height: 200px;
+    overflow: hidden;
+    animation: scaledown .4s linear;
+    animation-fill-mode: forwards;
+    
+
+}
+
+.container__image:hover{
+    z-index: 100;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards ;
+    opacity: 0.8;
+    
+    
+}
+
+#portfolio {
+    animation: reboteIn_abajo 5s 1;
+}
+
+.downArrows {
+    animation: from-top 3s ease;
+}
+
+span:hover {
+    color: var(--color2);
+}
+
+/* portfolio */
+
+/* Form  */
+
+.buttonContact {
+    background-color: var(--color2);
+    border-style: none;
+    height: 40px;
+}
+
+.buttonContact:hover {
+    background-color: var(--color3);
+}
+
+.buttonContact:active {
+    background-color: var(--color4);
+}
+
+
+/* --- Main cierre --- */
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+
+/*ANIMACIONES*/
+
+
+/* Animacion portafolio */
+
+@keyframes scaledown {
+0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}
+
+}
+
+@keyframes scale {
+0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+}
+
+
+
+@keyframes reboteIn_abajo {
+
+0% {
+    opacity: 0;
+    transform: translateY(100vw);
+}
+
+50% {
+    transform: translateY(-30px);
+    opacity: 1;
+}
+
+70% {
+
+    transform: translateY(10px);
+
+}
+
+}
+
+/* Animacion portafolio cierre */
+
+/* Animacion imgHero & arrowsDown */
+
+@keyframes from-top {
+0% {
+    opacity: 0;
+    transform: translateY(-80px);
+}
+
+100% {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+}
+/* Animacion imgHero & arrowsDown cierre */
+
+/* inicio Mediaqueries */
+
+@media (min-width:320px) and (max-width:480px) {
+    
+.navbar-brand {
+    display: flex;
+    width: 60%; 
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+}
+
+}
+
+@media (min-width:768px) and (max-width:992px) {
+
+h1, h2 {
+    font-size: 5rem; 
+}
+.text-experience, .downArrows, .my-text {
+    font-size: 2rem; 
+}
+
+}
+
+/* cierre Mediaqueries */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
